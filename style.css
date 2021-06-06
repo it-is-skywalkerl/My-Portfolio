@@ -1,0 +1,98 @@
+/* Global Properties */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #00779b;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+/* Main Heading Font */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+
+.navigation-link {
+  border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #3eff17;
+  transition: 0.5s ease;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.main-container {
+  padding-top: 1rem;
+}
+
+.mainrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainrow img {
+  width: auto;
+  height: 100vh;
+}
+
+.object {
+  animation: MoveUpDown 3s linear infinite;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.tobegreen {
+  color: #3eff17;
+}
+
+.red {
+  color: #ff0000;
+}
+
+#about {
+  background: #0092be;
+  border: 6px solid #8fc0ff;
+  width: 900px;
+  border-radius: 2rem;
+}
+
+#projects {
+  width: 900px;
+}
+
+#connect {
+  background: #3b4b75;
+}
